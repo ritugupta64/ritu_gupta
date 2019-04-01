@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color:#000;
+
+}
+
+header{
+  padding:20px 5px;
+  text-align: center;
+  box-sizing: border-box;
+    
+}
+
+header h1{
+  font-size: 36px;
+  line-height: 40px;
+  color:#007fa3d4;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.users{
+  max-width: 710px;
+  width:100%;
+  margin: 50px auto;
+  background-color:#d8d8d8;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.user{
+  width:30.5%;
+  background-color:#ffffff;
+  display:inline-block;
+  margin-right: 4.2%;
+  margin-bottom: 60px;
+  padding: 5px;
+  box-sizing: border-box;
+  position: relative;
+  height: 212px;
+  vertical-align: top;
+}
+
+@media all and (min-width:600px){
+.user:nth-child(3n+0){
+  margin-right: 0px;
+}
+}
+
+.delete{
+  font-size: 14px;
+  line-height: 18px;
+  color:#007fa3;
+  position:absolute;
+  bottom:5px;
+  left:5px;
+  cursor: pointer;
+}
+
+.radius-conatiner{
+  margin-bottom: 35px;
+}
+
+.user-thumbnail{
+  border-radius: 50%;
+  position: absolute;
+  width:80px;
+  left:0%;
+  top:-20%;
+  right:0%;
+  margin: 0 auto;
+ 
+}
+
+
+.userName{
+  font-size: 18px;
+  line-height: 24px;
+  color: #e93939;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.error{
+  padding:5px;
+  color:#f00;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@media all and (max-width:479px){
+  .user{
+    width:47.8%;
+
+  }
+  .user:nth-child(2n+0){
+    margin-right: 0px;
+  }
+  
+}
